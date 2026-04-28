@@ -1,3 +1,16 @@
+Metadata-Version: 2.4
+Name: tc-analyzer
+Version: 0.1.0
+Summary: Python time complexity analysis library using AST parsing
+Author: liangwenfeng
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Dynamic: license-file
+
 # tc-analyzer
 
 A Python library for analyzing time complexity of code through AST parsing.
