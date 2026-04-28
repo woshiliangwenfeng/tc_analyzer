@@ -2,13 +2,35 @@ Metadata-Version: 2.4
 Name: tc-analyzer
 Version: 0.1.0
 Summary: Python time complexity analysis library using AST parsing
-Author: liangwenfeng
+Author-email: woshiliangwenfeng <1321852595@qq.com>
 License: MIT
+Project-URL: Homepage, https://github.com/woshiliangwenfeng/tc_analyzer
+Project-URL: Repository, https://github.com/woshiliangwenfeng/tc_analyzer
+Project-URL: Issues, https://github.com/woshiliangwenfeng/tc_analyzer/issues
+Project-URL: Documentation, https://github.com/woshiliangwenfeng/tc_analyzer#readme
+Keywords: time-complexity,ast,code-analysis,algorithm,complexity-analysis,performance
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Typing :: Typed
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Provides-Extra: dev
 Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Requires-Dist: twine>=4.0; extra == "dev"
+Requires-Dist: build>=0.10; extra == "dev"
 Dynamic: license-file
 
 # tc-analyzer

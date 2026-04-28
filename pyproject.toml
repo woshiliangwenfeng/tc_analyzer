@@ -9,11 +9,59 @@ description = "Python time complexity analysis library using AST parsing"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
-authors = [{name = "liangwenfeng"}]
+authors = [
+    {name = "woshiliangwenfeng", email = "1321852595@qq.com"}
+]
+keywords = ["time-complexity", "ast", "code-analysis", "algorithm", "complexity-analysis", "performance"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/woshiliangwenfeng/tc_analyzer"
+Repository = "https://github.com/woshiliangwenfeng/tc_analyzer"
+Issues = "https://github.com/woshiliangwenfeng/tc_analyzer/issues"
+Documentation = "https://github.com/woshiliangwenfeng/tc_analyzer#readme"
 
 [project.optional-dependencies]
-dev = ["pytest>=7.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "twine>=4.0",
+    "build>=0.10",
+]
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["tc_analyzer*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["tc_analyzer"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
